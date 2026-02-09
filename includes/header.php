@@ -5,7 +5,7 @@
                 <div class="container-fluid navbar-expand-xl">
                     <div class="logo-container">
                         <a href="#Logo" class="navbar-brand">
-                            <img src="assets/image/logo.png" class="img-fluid w-100" alt="Logo Reboost">
+                            <img src="assets/image/.png" class="img-fluid w-100" alt="Logo Reboost">
                         </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,7 +58,7 @@
                         <div class="offcanvas-body">
                             <div class="r-container d-flex flex-column gap-5 mx-5">
                                 <div class="d-flex flex-column gap-3">
-                                    <img src="assets/image/logo.png" class="img-fluid" alt="" width="150px">
+                                    <img src="assets/image/.png" class="img-fluid" alt="" width="150px">
                                 </div>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officiis

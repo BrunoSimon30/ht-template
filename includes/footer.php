@@ -64,7 +64,7 @@
     <!-- Logo -->
     <div class="footer-logo">
       <a href="/">
-        <img src="assets/image/footer/footer.png" alt="Forjwell Logo">
+        <img src="assets/image/footer/ .png" alt="Forjwell Logo">
       </a>
     </div>
 
