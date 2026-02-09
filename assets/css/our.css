@@ -47,9 +47,17 @@
 .why-box {
     background: #121212;
     padding: 46px 57px;
-    border-radius: 18px;
+    border: 2px solid transparent;
+    border-radius: 16px;
     text-align: center;
+    transition: all 1s;
 }
+.why-box:hover{
+  border: 2px solid transparent;
+border-radius: 16px;
+background: linear-gradient(32deg, #1a0a08 0%, #0f0f0f 100%) padding-box, linear-gradient(166deg, #121212, #FE4728) border-box;
+}
+
 
 .why-box img {
     width: 55%;
@@ -64,8 +72,11 @@
 
 .why-box h3 {
     font-size: 45px;
+    transition: ease 1s;
 }
-
+.why-box:hover h3 {
+  color: #ff4b2b;
+}
 .wbox-in h4 {
     font-size: 30px;
 }
@@ -75,9 +86,17 @@
 }
 
 .process-box {
-    background: #121212;
     padding: 28px 34px;
     border-radius: 15px;
+    background: #121212;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    transition: all 2s;
+}
+.process-box:hover {
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background: linear-gradient(32deg, #1a0a08 0%, #0f0f0f 100%) padding-box, linear-gradient(166deg, #121212, #FE4728) border-box;
 }
 .process-space {
     height: 131px;
@@ -85,24 +104,45 @@
 
 .process-in p {
     /* width: 65%; */
+    height: 48px;
 }
 .process-in h4 {
     font-size: 30px;
+    transition: ease 1s;
+}
+.process-box:hover h4 {
+  color: #ff4b2b;
 }
 .section-prec {
-    padding: 6em 0em 6em 0em;
+    padding: 6em 1em 6em 1em;
 }
 .why-b {
     margin-left: 10%;
 }
 /* counter */
 .section-counter {
-    padding: 120px 0;
+    padding: 120px 15px;
 }
 .counter-box {
-    background: #121212;
     padding: 51px 36px;
     border-radius: 15px;
+    background: #121212;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    transition: ease 1s;
+}
+
+.counter-box:hover {
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background: linear-gradient(32deg, #1a0a08 0%, #0f0f0f 100%) padding-box, linear-gradient(166deg, #121212, #FE4728) border-box;
+}
+.count-wrap
+{
+  transition: ease 1s;
+}
+.counter-box:hover .count-wrap{
+color: #ff4b2b;
 }
 
 .counter-space {
@@ -112,24 +152,39 @@
 
 
 .marketing-card {
-    background: linear-gradient(90deg, #1b0606, #0f0404);
+    background: linear-gradient(90deg, #1b060600, #0f040400);
     border-radius: 20px;
     padding: 40px;
-    border: 1px solid rgba(255, 80, 40, 0.3);
+    border: 1px solid #151515;
+    transition: all 1000ms;
+    margin-bottom: 25px;
   }
+
+  .marketing-card:hover {
+    border: 1px solid rgba(255, 80, 40, 0.3);
+    background: linear-gradient(90deg, #1b0606, #0f0404);
+}
+
   
   /* Left Section */
   .number-circle {
     width: 60px;
     height: 60px;
-    background: #ff4b2b;
+    background: transparent;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     margin-bottom: 20px;
+    border: 1px solid #fff;
+    transition: all 1000ms;
   }
+  .marketing-card:hover .number-circle
+{
+  background: #ff4b2b;
+  border: 1px solid #ff4b2b;
+}
   
   .title {
     font-size: 40px;
@@ -142,12 +197,23 @@
   }
   
   /* Right Content */
-  .description {
+  .sr-wrp .description {
     color: #ccc;
-    margin-bottom: 34%;
+    margin-bottom: 25%;
     line-height: 1.6;
+    transition: all 1000ms;
   }
-  
+  .marketing-card:hover .sr-wrp .description{
+    margin-bottom: 34%;
+  }
+  .sr-wrp .btn{
+    opacity: 0;
+    transition: all 1000ms;
+  }
+  .marketing-card:hover .sr-wrp .btn{
+    opacity: 1;
+    
+  }
   /* Button */
   .strategy-btn {
     background: #ff4b2b;
@@ -198,13 +264,13 @@
   }
   
   /* Social Icons */
-  .social-icons {
+  .social-iconss {
     display: flex;
     gap: 15px;
     margin: 15px 0;
   }
   
-  .social-icons span {
+  .social-iconss span {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -215,17 +281,20 @@
     border: 1px solid #333;
     transition: 0.3s;
   }
+ 
+
+
   
-  .social-icons span i {
+  .social-iconss span i {
     color: #ff3c1f;
     font-size: 18px;
   }
   
-  .social-icons span:hover {
+  .social-iconss span:hover {
     background: #ff3c1f;
   }
   
-  .social-icons span:hover i {
+  .social-iconss span:hover i {
     color: #fff;
   }
   
@@ -286,7 +355,9 @@
   }
   
   .footer-links a:hover {
-    color: #fff;
+    color: #ff4b2b;
+    padding-left: 9px;
+    display: block;
   }
   
   .email-box a {
@@ -298,7 +369,7 @@
     color: #fff;
   }
   
-  .social-icons a {
+  .social-iconss a {
     text-decoration: none;
   }
   .leads {
@@ -333,4 +404,150 @@
     outline-color: #fff;
     transform: scale(1);
     outline: 1px solid;
+}
+
+img.left-s {
+  position: absolute;
+  right: 0;
+  top: -22%;
+  z-index: -1;
+}
+
+img.right-s {
+  position: absolute;
+  left: 0;
+  bottom: -18%;
+  z-index: -1;
+}
+.section-about {
+  padding: 120px 15px;
+}
+.count-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.count-wrap h2 {
+  font-size: 48px;
+}
+
+.funnal {
+  text-align: center;
+}
+
+.funnal .process-space {
+  height: 90px;
+}
+.funnal .process-box {
+  padding: 28px 53px;
+}
+.funnal img {
+  height: 111px;
+}
+.section-about .why-b {
+  margin-left: 0;
+}
+
+/*media-quries*/
+@media (max-width: 1440px)
+{
+  .why-b {
+    margin-left: 4%;
+}
+}
+
+@media (max-width: 1024px){
+	
+}
+
+@media (max-width:1200px){
+  img.left-s,img.right-s
+  {
+    display: none;
+  }
+  button.btn-play
+  {
+    display: none;
+  }
+  .w-max {
+    width: auto;
+}
+.m-con h1 span
+{
+  padding-left: 0;
+}
+.m-con h1
+{
+  margin-left: 0;
+}
+.main-sec .col.col-xl-2.mb-3 {
+  display: none;
+}
+br {
+  display: none;
+}
+
+
+
+}
+@media (max-width: 980px)
+{
+  .mb-5 {
+    margin-bottom: 1rem !important;
+}
+.sec-btn {
+  display: flow;
+}
+.section-about {
+  padding: 120px 11px;
+}
+.why-b {
+  margin-left: 0%;
+}
+.why-box {
+  margin-bottom: 15px;
+}
+.why-box h3 {
+  font-size: 27px;
+  
+}
+.section-prec {
+  padding: 6em 1em 6em 1em;
+}
+.section-counter {
+  padding: 26px 11px;
+}
+.counter-box {
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 25px;
+  
+}
+.funnal .process-box {
+ 
+  margin-bottom: 20px;
+}
+.from-left {
+  
+  display: none;
+}
+.leads {
+  padding: 0;
+  margin-top: 0;
+}
+.sr-wrp .btn {
+  opacity: 1;
+  
+}
+
+
+}
+
+@media (min-width: 440px) and (max-width: 740px){
+
+
+}
+@media (max-width: 425px){
+	
 }

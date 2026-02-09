@@ -41,7 +41,7 @@
       <div class="col-lg-3 col-md-6">
         <h5 class="footer-heading">Follow Us On</h5>
 
-        <div class="social-icons">
+        <div class="social-iconss">
           <a href="#" target="_blank">
             <span><i class="fa-brands fa-x-twitter"></i></span>
           </a>

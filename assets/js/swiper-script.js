@@ -32,6 +32,43 @@ $(function () {
         },
     });
 
+
+    var swiperProcess = new Swiper('.swiperProcess', {
+        autoplay: {
+            delay: 2000
+        },
+        speed: 2000,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 10,
+        loop: false,
+        grabCursor: true,
+        breakpoints: {
+            // when window width is >= 360px
+            360: {
+                slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 4,
+            },
+            // when window width is >= 1024px
+            1024: {
+                slidesPerView: 4,
+            }
+        },
+        // If we need pagination
+        pagination: {
+            enabled: true,
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+    });
+
+
+
+
     var swiperImage = new Swiper('.swiperImage', {
         autoplay: {
             delay: 3000
