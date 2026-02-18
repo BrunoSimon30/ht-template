@@ -43,9 +43,9 @@
 
         <div class="social-iconss">
           <a href="#" target="_blank">
-            <span><i class="fa-brands fa-x-twitter"></i></span>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
           </a>
-
+           
           <a href="#" target="_blank">
             <span><i class="fa-brands fa-instagram"></i></span>
           </a>
@@ -64,7 +64,7 @@
     <!-- Logo -->
     <div class="footer-logo">
       <a href="/">
-        <img src="assets/image/footer/ .png" alt="Forjwell Logo">
+        <img src="assets/image/footer/footer.png" alt="Forjwell Logo">
       </a>
     </div>
 

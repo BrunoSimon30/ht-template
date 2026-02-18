@@ -1,3 +1,6 @@
+[class^="box-"]{display:none}
+[class^="box-"].showfirst{display:block}
+
 .mb-b
 {
     margin-bottom: 20px;
@@ -448,6 +451,82 @@ img.right-s {
   margin-left: 0;
 }
 
+
+.main-inner {
+  padding-top: 129px;
+  padding-bottom: 80px;
+}
+.web-img img {
+  /* width: 70%; */
+  margin: 0 auto;
+  float: inline-end;
+}
+.bg-image-in {
+  background: url(../image/Image\ Background.png) ;
+}
+
+.nav-item.dropdown .dropdown-toggle-split::after {
+  content: "";
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left: 4px;
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+
+.tb-btn {
+  margin-bottom: 20px;
+}
+.case-detail {
+  padding: 0 15px;
+}
+
+.case-detail-sec .leads {
+  padding: 15px;
+}
+.section-contact .leads {
+  padding: 0;
+  margin: 0;
+}
+.section-contact {
+  padding-bottom: 80px;
+}
+
+.contact-left-box {
+  background-color: #121212; /* slightly lighter than page */
+}
+.contact-method-box {
+  background-color: #252525;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.3s ease;
+}
+.contact-method-box:hover {
+  background-color: #2a2a2a;
+  border-color: rgba(254, 71, 40, 0.3);
+}
+.contact-method-icon {
+  font-size: 1.25rem;
+}
+.contact-method-icon i {
+  color: var(--accent-color, #FE4728);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*media-quries*/
 @media (max-width: 1440px)
 {
@@ -550,4 +629,34 @@ br {
 }
 @media (max-width: 425px){
 	
+}
+
+/* Case Study - filter tabs (pill style, active = accent fill) */
+.case-study-tabs {
+    margin-top: 0.5rem;
+}
+.case-study-tab {
+    color: var(--text-color-2, #fff);
+    background-color: transparent;
+    border: 1px solid var(--text-color-2, rgba(255,255,255,0.9));
+    border-radius: 100px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    white-space: nowrap;
+}
+.case-study-tab:hover {
+    color: var(--text-color, #fff);
+    border-color: var(--text-color, #fff);
+}
+.case-study-tab.active {
+    background-color: var(--accent-color, #FE4728);
+    color: #fff;
+    border-color: var(--accent-color, #FE4728);
+}
+.case-study-tab.active:hover {
+    background-color: var(--accent-color, #FE4728);
+    color: #fff;
+    border-color: var(--accent-color, #FE4728);
 }
